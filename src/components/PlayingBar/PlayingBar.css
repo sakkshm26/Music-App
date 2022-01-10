@@ -1,0 +1,91 @@
+.playing-bar{
+    grid-area: playing-bar;
+    z-index: 2;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    /* background-color: #141414; */
+    background-image: url(../../assets/stars.png);
+    margin-bottom: 15px;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    left: 0;
+}
+
+.playing-bar .music-info{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 20%;
+}
+
+.playing-bar .music-info img{
+    height: 60px;
+    width: 50px;
+    margin-right: 20px;
+    border-radius: 5px;
+}
+
+.playing-bar .music-info .music-name{
+    font-size: 17px;
+    margin-bottom: 5px;
+}
+
+.playing-bar .music-info .artist-name{
+    color: grey;
+    font-size: 15px;
+}
+
+.playing-bar .player{
+    width: 40%;
+}
+
+.playing-bar .before-music{
+    font-size: 20px;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    margin-top: 8px;
+}
+
+audio::-webkit-media-controls-panel {
+    background: linear-gradient(to left, #8952f0, #05a38b);
+    box-shadow: none;
+    border-radius: none;
+    outline: none;
+}
+
+audio::-webkit-media-controls-play-button{
+    border-radius: 50%;
+    margin: 20px;
+}
+
+audio::-webkit-media-controls-timeline {
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+audio::-webkit-media-controls-volume-slider {
+    padding-left: 8px;
+    padding-right: 8px;
+}
+
+.playing-bar .icons{
+    display: flex;
+    justify-content: space-evenly;
+    width: 20%;
+}
+
+.playing-bar .icons #like{
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.playing-bar .icons #add{
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.playing-bar .icons .liked{
+    color: red;
+}

@@ -1,0 +1,79 @@
+.main-area{
+    grid-area: main-area;
+    overflow-y: scroll;
+    height: 39rem;
+    z-index: 2;
+    margin-bottom: 20px;
+}
+
+::-webkit-scrollbar {
+    width: 0;
+}
+
+#search{
+    display: flex;
+    justify-content: center;
+    margin-top: 14px;
+}
+
+#search input{
+    border: none;
+    margin: 0 10px;
+    width: 24rem;
+    height: 25px;
+    border-radius: 5px;
+    background-color: #2f2f2f;
+    padding: 0 8px;
+    color: white;
+}
+
+#search input:focus{
+    outline: none;
+}
+
+#search .icon{
+    margin-top: 5px;
+}
+
+/* .main-container h1{
+    font-size: 35px;
+    font-weight: 400;
+    padding-top: 20px;
+    padding-bottom: 5px;
+    background: linear-gradient(to right, #5210cd, 32%, #a10000);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+} */
+
+.main-container .cards{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 50px 10px;
+}
+
+.main-container .music-card{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #111111;
+    border-radius: 15px;
+    margin: 0 25px 70px 25px;
+    cursor: pointer;
+}
+
+.main-container .music-card img{
+    height: 180px;
+    width: 170px;
+}
+
+.main-container .music-card h3{
+    font-style: 17px;
+    margin: 10px 0;
+}
+
+.main-container .music-card p{
+    font-size: 13px;
+    margin-bottom: 10px;
+}

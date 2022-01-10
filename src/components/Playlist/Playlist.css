@@ -1,0 +1,66 @@
+.playlist{
+    grid-area: main-area;
+    color: white;
+    overflow-y: scroll;
+    height: 39rem;
+    z-index: 2;
+    display: flex;
+    justify-content: center;
+}
+
+.playlist h2{
+    font-size: 40px;
+    font-weight: 300;
+    letter-spacing: 5px;
+    margin: 20px 0 30px 0;
+}
+
+.playlist-music{
+    display: flex;
+    flex-direction: column;
+}
+
+.playlist .music{
+    display: grid;
+    grid-template-areas: "image music artist";
+    grid-gap: 50px 15rem;
+    background-color: #0e0e0e;
+    margin: 10px 0;
+    width: 86%;
+    align-items: center;
+    border-radius: 5px;
+    padding: 10px 40px;
+    cursor: pointer;
+}
+
+.playlist .music:hover{
+    background: linear-gradient(to left, #1f0452, #023b33);
+    background-size: 150% 150%;
+    animation: gradient 7s ease infinite;
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+.playlist .music img{
+    height: 60px;
+    width: 50px;
+    border-radius: 5px;
+}
+
+.playlist .music h3{
+    width: 100px;
+}
+
+.playlist .music p{
+    width: 100px;
+}
