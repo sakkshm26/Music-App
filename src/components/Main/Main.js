@@ -7,6 +7,7 @@ import Music from './Music';
 
 function Main({setStorage}) {
 
+    const originalList = songList.music;
     const [musicList, setMusicList] = useState(songList.music);
 
     const getMusic = item => {
@@ -17,16 +18,15 @@ function Main({setStorage}) {
 
     const searchMusic = () => {
         const value = document.getElementById('search-input').value;
-        const updatedList = musicList.filter(music => music.name === value);
+        const updatedList = originalList.filter(music => music.name.includes(value));
         setMusicList(updatedList);
-        // console.log(updatedList)
     }
 
     return (
         <div className='main-area'>
             <div id='search'>
-                <input type='text' id='search-input' />
-                <FontAwesomeIcon icon={faSearch} className='icon' onClick={() => searchMusic()}/>
+                <input type='text' id='search-input' onChange={() => searchMusic()} />
+                <FontAwesomeIcon icon={faSearch} className='icon'/>
             </div>
             <div className='main-container'>
                 <div className='cards'>

@@ -16,7 +16,6 @@ function PlayingBar({ storage }) {
   const handleLike = () => {
     const song = document.getElementById('like');
     song.classList.contains('liked') ? song.classList.remove('liked') : song.classList.add('liked');
-    console.log(localStorage.getItem('music'))
   }
 
   useEffect(() => {
@@ -24,6 +23,11 @@ function PlayingBar({ storage }) {
       const player = document.getElementsByTagName('audio')[0];
       player.load();
       player.play();
+
+      const song = document.getElementById('like');
+      if (song.classList.contains('liked')) {
+        song.classList.remove('liked');
+      };
     }
   }, [storage])
 

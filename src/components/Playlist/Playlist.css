@@ -9,7 +9,7 @@
 }
 
 .playlist h2{
-    font-size: 40px;
+    font-size: 35px;
     font-weight: 300;
     letter-spacing: 5px;
     margin: 20px 0 30px 0;
@@ -22,15 +22,14 @@
 
 .playlist .music{
     display: grid;
-    grid-template-areas: "image music artist";
-    grid-gap: 50px 15rem;
+    grid-template-areas: "image music artist icon";
+    grid-gap: 50px 11rem;
     background-color: #0e0e0e;
     margin: 10px 0;
-    width: 86%;
+    width: 90%;
     align-items: center;
     border-radius: 5px;
     padding: 10px 40px;
-    cursor: pointer;
 }
 
 .playlist .music:hover{
@@ -63,4 +62,45 @@
 
 .playlist .music p{
     width: 100px;
+}
+
+.playlist .music .icons{
+    grid-area: icon;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 60px;
+}
+
+#play-icon{
+    color: #14c9ae;
+    cursor: pointer;
+}
+
+#cross-icon{
+    color: red;
+    cursor: pointer;
+}
+
+.playlist-before{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.playlist-before h2{
+    margin: 40px 0;
+    font-size: 30px;
+    letter-spacing: 3px;
+}
+
+.playlist-before a{
+    text-decoration: none;
+    color: white; 
+    font-size: 18px;
+    padding: 13px 15px;
+    border-radius: 5px;
+    background: linear-gradient(to left, #3f08a7, #046659);
+    background-size: 150% 150%;
+    animation: gradient 7s ease infinite;
 }

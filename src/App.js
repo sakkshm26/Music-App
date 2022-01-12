@@ -17,7 +17,7 @@ function App() {
       <PlayingBar storage={storage} />
       <Routes>
         <Route exact path="/" element={<Main setStorage={setStorage} />} />
-        <Route exact path="/playlist" element={<Playlist />} />
+        <Route exact path="/playlist" element={<Playlist setStorage={setStorage}/>} />
       </Routes>
     </div>
   );
