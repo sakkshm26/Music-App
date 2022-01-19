@@ -18,6 +18,12 @@ function PlayingBar({ storage }) {
     song.classList.contains('liked') ? song.classList.remove('liked') : song.classList.add('liked');
   }
 
+  const mobilePlayer = () => {
+    if (window.innerWidth <= 650) {
+      
+    }
+  }
+
   useEffect(() => {
     if (localStorage.getItem('music')) {
       const player = document.getElementsByTagName('audio')[0];
@@ -35,7 +41,7 @@ function PlayingBar({ storage }) {
     <div>
       {localStorage.getItem('music') ?
         <div className='playing-bar'>
-          <div className='music-info'>
+          <div className='music-info' onClick={() => mobilePlayer()}>
             <img src={`${JSON.parse(storage).img}`} alt='Not found' />
             <div className='name'>
               <p className='music-name'>{JSON.parse(storage).name}</p>

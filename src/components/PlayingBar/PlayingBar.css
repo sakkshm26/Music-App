@@ -56,7 +56,6 @@ audio::-webkit-media-controls-panel {
 }
 
 audio::-webkit-media-controls-play-button{
-    border-radius: 50%;
     margin: 20px;
 }
 
@@ -66,8 +65,7 @@ audio::-webkit-media-controls-timeline {
 }
 
 audio::-webkit-media-controls-volume-slider {
-    padding-left: 8px;
-    padding-right: 8px;
+    padding: 0 8px;
 }
 
 .playing-bar .icons{
@@ -88,4 +86,29 @@ audio::-webkit-media-controls-volume-slider {
 
 .playing-bar .icons .liked{
     color: red;
+}
+
+@media screen and (max-width: 950px) {
+    .playing-bar .player {
+        width: 50%;
+    }
+
+    audio::-webkit-media-controls-play-button{
+        margin: 10px;
+    }
+    
+    audio::-webkit-media-controls-timeline {
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+    
+    audio::-webkit-media-controls-volume-slider {
+        padding: 0 5px;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    .playing-bar .icons{
+        /* display: none; */
+    }
 }
