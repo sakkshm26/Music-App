@@ -10,8 +10,8 @@ function Music({item, setStorage}) {
     return (
         <div className='music-card' onClick={() => selectMusic()}>
             <img src={item.img} alt='Not found' />
-            <h3>{item.name}</h3>
-            <p>{item.artist}</p>
+            <p className='name'>{item.name}</p>
+            <p className='artist'>{item.artist}</p>
         </div>
     )
 }

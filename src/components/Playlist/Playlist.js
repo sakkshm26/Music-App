@@ -25,8 +25,8 @@ function Playlist({setStorage}) {
         return (
             <div className='music' key={music.id}>
                 <img src={music.img} />
-                <h3>{music.name}</h3>
-                <p>{music.artist}</p>
+                <p className='name'>{music.name}</p>
+                <p className='artist'>{music.artist}</p>
                 <div className='icons'>
                     <FontAwesomeIcon id='play-icon' icon={faPlay} onClick={() => selectMusic(music)}/> 
                     <FontAwesomeIcon id='cross-icon' icon={faTimes} onClick={() => delSong(music)}/>

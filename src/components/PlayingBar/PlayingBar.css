@@ -112,3 +112,13 @@ audio::-webkit-media-controls-volume-slider {
         /* display: none; */
     }
 }
+
+@media screen and (max-width: 550px) {
+    .playing-bar .music-info{
+        display: none;
+    }
+
+    .playing-bar .player {
+        width: 68%;
+    }
+}

@@ -69,14 +69,19 @@
     width: 170px;
 }
 
-.main-container .music-card h3{
+.main-container .music-card .name{
     font-style: 17px;
     margin: 10px 0;
+    font-weight: bold;
 }
 
-.main-container .music-card p{
+.main-container .music-card .artist{
     font-size: 13px;
     margin-bottom: 10px;
+}
+
+.MuiList-root a{
+    text-decoration: none!important;
 }
 
 @media screen and (max-width: 700px) {

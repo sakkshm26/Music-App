@@ -24,6 +24,7 @@
 .nav-links li{
     padding: 10px 0; 
     cursor: pointer;
+    color: white!important;
 }
 
 .nav-links .icon{
@@ -33,4 +34,39 @@
 .nav-links a{
     text-decoration: none;
     color: white;
+}
+
+.toggle-button{
+    background-color: #000;
+    color: white!important;
+    padding: 0!important;
+    font-size: 18px;
+    display: none;
+    margin-left: 10px!important;
+}
+
+@media screen and (max-width: 550px) {
+    .nav-bar{
+        width: 0;
+    }
+
+    #search{
+        width: 90%;
+    }
+
+    #search input{
+        width: 13rem;
+    }
+    
+    .nav-bar .desktop{
+        display: none;
+    }
+
+    .nav-bar .toggle-button{
+        display: block;
+    }
+
+    .toggle-navbar{
+        display: flex!important;
+    }
 }

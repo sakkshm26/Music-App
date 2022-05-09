@@ -1,4 +1,5 @@
 import { useState } from "react";
+// import 'bootstrap/dist/css/bootstrap.min.css';
 import Main from "./components/Main/Main";
 import Navbar from "./components/Navbar/Navbar";
 import PlayingBar from "./components/PlayingBar/PlayingBar";
