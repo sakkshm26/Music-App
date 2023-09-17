@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import './Main.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faSearch } from '@fortawesome/free-solid-svg-icons';
-import songList from '../MusicList.js';
+import {music} from '../MusicList';
 import Music from './Music';
 import AppBar from '@mui/material/AppBar';
 import Box from '@mui/material/Box';
@@ -22,8 +22,8 @@ import { NavLink } from 'react-router-dom';
 
 function Main({ setStorage }) {
 
-    const originalList = songList.music;
-    const [musicList, setMusicList] = useState(songList.music);
+    const originalList = music;
+    const [musicList, setMusicList] = useState(music);
 
     const getMusic = item => {
         return (
